@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Dine Desk POS</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700&family=Public+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="root" class="app" hidden></div>
+<div id="boot" style="padding:18vh 0;text-align:center"><div class="brand" style="font-size:28px">Dine Desk</div><p class="muted">Connecting to your restaurant data…</p></div>
+<div id="modal"></div>
+<div id="toast"></div>
+
+<!-- 1. your Firebase settings (optional, needed only to share live between devices) -->
+<script src="firebase-config.js"></script>
+<!-- 2. Firebase libraries (only used when firebase-config.js is filled in) -->
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+<!-- 3. storage layer: Firebase if configured, otherwise this browser's localStorage -->
+<script src="storage.js"></script>
+<!-- 4. the app -->
+<script src="app.js"></script>
+</body>
+</html>
